@@ -27,7 +27,7 @@ public class PrintEverything{
 
 	   for(int row=1;row<10;row++){
 	       for(int col=1;col<=row;col++){
-		   System.out.print(row+"*"+col+"="+row*col+" ");
+		   System.out.print(row+"*"+col+"="+row*col+"\t");
 		  }
 		  System.out.println();
 	   }
@@ -39,7 +39,8 @@ public class PrintEverything{
 		for(int b=1;b<6;b++){System.out.print("*");}
 		for(int c=1;c<=2*row-2;c++){System.out.print(" ");}
 		System.out.println("*");
-		//Ç½±Ú
+		}
+        //Ç½±Ú
 		 //µÚÒ»ÐÐÐÇÐÇ
        for(int x=1;x<15;x++){
           System.out.print("*");
@@ -58,11 +59,6 @@ public class PrintEverything{
         for(int x=1;x<15;x++){
           System.out.print("*");
        }
-	   	  System.out.println();
-		
-		
-		}
-
 
 
   }

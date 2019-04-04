@@ -27,7 +27,7 @@ public class PrintEverything{
 
 	   for(int row=1;row<10;row++){
 	       for(int col=1;col<=row;col++){
-		   System.out.print(row+"*"+col+"="+row*col+" ");
+		   System.out.print(col+"*"+row+"="+row*col+"\t");
 		  }
 		  System.out.println();
 	   }

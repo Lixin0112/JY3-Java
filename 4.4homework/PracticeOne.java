@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class PracticeOne{
+public static void main(String[] args){
+  
+   Scanner sc=new Scanner(System.in);
+   System.out.println("请输入一段话:");
+   String str=sc.next();
+   System.out.println("请输入上面这段话中要查询位置的汉字:");
+   char ch=(sc.next()).charAt(0);
+   System.out.print("这个汉字是这段文字的");
+   for(int i=0;i<str.length();i++){
+   if(str.charAt(i)==ch){
+   System.out.print("第"+(i+1)+" ");
+   }
+   }
+   System.out.print("个字");
+}
+}
