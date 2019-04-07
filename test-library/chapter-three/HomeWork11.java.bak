@@ -1,0 +1,26 @@
+//11、有一个不多于5位的正整数,求它是几位数,分别打印出每一位数字.(知识点：条件语句)[必做题]
+
+import java.util.Scanner;
+public class HomeWork11{
+public static void main(String[] args){
+  Scanner sc=new Scanner(System.in);  
+  System.out.println("请输入一个不多于5位的正整数：");
+  int x=sc.nextInt();
+  int ge=x%10;
+  int shi=x/10%10;
+  int bai=x/100%10;
+  int qian=x/1000%10;
+  int wan=x/10000;
+  if(wan==0&&qian==0&&bai==0&&shi==0){
+  System.out.println("这是一个一位数:"+ge);
+  }else if(wan==0&&qian==0&&bai==0){
+  System.out.println("这是一个两位数:"+shi+" "+ge);
+  }else if(wan==0&&qian==0){
+  System.out.println("这是一个三位数:"+bai+" "+shi+" "+ge);
+  }else if(wan==0){
+  System.out.println("这是一个四位数:"+qian+" "+bai+" "+shi+" "+ge);
+  }else{
+  System.out.println("这是一个五位数:"+wan+" "+qian+" "+bai+" "+shi+" "+ge);
+  }
+  }
+}
